@@ -1,229 +1,252 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Samsung Galaxy Note 10 Lite</title>
-    <link rel="stylesheet" href="style.css" />
-    
-  </head>
-  <body >
-    <div class="container">
-      <button onclick="topFunction()" id="myBtn" title="Về đầu trang"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-        <a class="navbar-brand" href="./home.html" style="color: yellow;"><i>thegioididong.com</i> </a> <!--thương hiệu-->
-        <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <form class="form-inline"> <!--khung tm kiếm-->
-            <input class="form-control mr-sm-0" type="search" placeholder="Bạn tìm gì.. " aria-label="Search">
-          </form>
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"  onclick="GioHang()"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ hàng <span class="sr-only">(current)</span></a>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Samsung Galaxy Note 10 Lite</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <button onclick="topFunction()" id="myBtn" title="Về đầu trang"><i class="fa fa-arrow-up"
+        aria-hidden="true"></i></button>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="./home.html" style="color: yellow;"><i>thegioididong.com</i> </a> <!--thương hiệu-->
+      <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <form class="form-inline"> <!--khung tm kiếm-->
+          <input class="form-control mr-sm-0" type="search" placeholder="Bạn tìm gì.. " aria-label="Search">
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="cart.html" ><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ
+              hàng <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lịch sử mua hàng</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Mặt hàng
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./list_item.html"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;
+                Điện thoại</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;Laptop</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-tablet" aria-hidden="true"></i>&nbsp;Tablet</a>
+              <a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;PC,Máy in</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Đồng hồ thông minh</a>
+              <a class="dropdown-item" href="#">Đồng hồ thời trang</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Máy cũ giá rẻ</a>
+              <a class="dropdown-item" href="#">Sim, Thẻ cào</a>
+              <a class="dropdown-item" href="#">Trả góp, Điện nước</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>24h công nghệ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html"><i class="fa fa-question" aria-hidden="true"></i>Hỏi đáp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-wrench" aria-hidden="true"></i>Hỗ Trợ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- detail produce -->
+    <Div style="padding: 5px;">
+      <div class="row">
+        <div class="col-lg-5 col-sm-12">
+          <h4 class="font-weight-bold" style="display: inline; font-size: 22px">Điện thoại Samsung Galaxy Note 10 Lite
+          </h4>
+        </div>
+        <div class="col-lg-7 col-sm-12" style="display: inline;">
+          <!-- rating result with star -->
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <small class="text-muted font-weight-lighter user-select-none">513 Lượt đánh giá</small>
+        </div>
+      </div>
+      <!-- img zoom hover -->
+      <div class="row ml-2 mt-2">
+        <figure id="magnifying_area" class="col-md-5 col-sm-12">
+          <img id="magnifying_img" class="col-md-5 col-sm-12"
+            src="https://cdn.tgdd.vn/Products/Images/42/206176/samsung-galaxy-note-10-plus-den-400x460-400x460.png"
+            alt="">
+        </figure>
+
+        <div class="col-md-7 col-sm-12 mt-2">
+          <ul class="list-group mt-2">
+            <li class="list-group-item">
+              <h4 class="h5 font-weight-bold">Galaxy Note 10 Lite</h4>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Lịch sử mua hàng</a>
+            <li class="list-group-item">
+              <h4 class="h5" style="color: rgb(211, 15, 15);">15.990.000₫
+                <small class="font-weight-light mb-2 text-muted"
+                  style="display: inline;"><strike>17.990.000đ</strike></small>
+                <small style="color: rgb(202, 15, 15); font-size: 13px;">-11%</small>
+                <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>
+              </h4>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Mặt hàng
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./list_item.html"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp; Điện thoại</a>
-                <a class="dropdown-item" href="#"><i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;Laptop</a>
-                <a class="dropdown-item" href="#"><i class="fa fa-tablet" aria-hidden="true"></i>&nbsp;Tablet</a>
-                <a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;PC,Máy in</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Đồng hồ thông minh</a>
-                <a class="dropdown-item" href="#">Đồng hồ thời trang</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Máy cũ giá rẻ</a>
-                <a class="dropdown-item" href="#">Sim, Thẻ cào</a>
-                <a class="dropdown-item" href="#">Trả góp, Điện nước</a>
+            <li class="list-group-item">
+              <span>Hoàn trả lại tiền <div style="color: red;display: inline;">khi sản phẩm lỗi do nhà sản xuất</div>
+                </span>
+            </li>
+            <li class="list-group-item">
+              <b>Khuyến mãi</b> : Tai nghe bluetooth, Sạc dự phòng
+            </li>
+            <li class="list-group-item">
+              <label for="clb">Chọn thêm các dịch vụ <b style="color: red;">miễn phí chỉ có ở TGDĐ</b></label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Giao ngay từ cửa hàng gần bạn nhất
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Chuyển danh bạ dữ liệu sang máy mới
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Trang trí miếng dán màn hình
+                </label>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>24h công nghệ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html"><i class="fa fa-question" aria-hidden="true"></i>Hỏi đáp</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-wrench" aria-hidden="true"></i>Hỗ Trợ</a>
+            <li class="list-group-item">
+              <button class="btn btn-primary ml-3" onclick="ThemMatHang()">Thêm vào giỏ hàng</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBack">
+                Đặt hàng
+              </button>
+              <div class="modal fade" id="staticBack" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl"> <!--modal-xl làm size lớn hơn(extra large)-->
+                  <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                      <h5 class="modal-title" id="exampleModalLabel">Điền thông tin khách hàng</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="col-lg-12 col-sm-12 m-auto">
+                        <div class="card">
+                          <div class="card-body">
+                            <form class="needs-validation" novalidate>
+                              <div class="form-row">
+
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationCustom02">Họ và Tên </label>
+                                  <input type="text" class="form-control" id="validationCustom02"
+                                    placeholder="Họ và Tên" value="" required>
+                                  <div class="valid-feedback">
+                                    Tên đẹp đấy!
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="phone">Số Điện Thoại</label>
+                                  <div class="input-group">
+
+                                    <input type="text" class="form-control" id="phone"
+                                      placeholder="Số điện thoại của bạn" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                      Hãy nhập số điện thoại của bạn!
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationCustom03">Tỉnh thành</label>
+                                  <input type="text" class="form-control" id="validationCustom03"
+                                    placeholder="Tỉnh thành" required>
+                                  <div class="invalid-feedback">
+                                    Hãy điền tỉnh hoặc thành phố của bạn.
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <label for="validationCustom04">Địa chỉ nhà</label>
+                                  <input type="text" class="form-control" id="validationCustom04"
+                                    placeholder="Địa chỉ cụ thể" required>
+                                  <div class="invalid-feedback">
+                                    Hãy nhập địa chỉ nhà chính xác.
+                                  </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                  <label for="validationCustom05">Hình thức thanh toán</label>
+                                  <select class="form-control" id="" placeholder="Đặt cọc trước 50%">
+                                    <option value="tt">Thanh toán trực tiếp khi nhận hàng</option>
+                                    <option value="c50">Đặt cọc trước 50%</option>
+                                    <option value="mm">Thanh toán qua ví Momo</option>
+                                    <option value="atm">Chuyển khoảng bằng qua thẻ ATM</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                  <label for="formGroupExampleInput2">Ghi chú</label>
+                                  <textarea class="form-control" id="ghichu" placeholder="Nhập ghi chú (nếu có)"
+                                    row="3"></textarea>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                  <label class="form-check-label" for="invalidCheck">
+                                    Xác nhận những thông tin trên là chính xác.
+                                  </label>
+                                  <div class="invalid-feedback">
+                                    Bạn phải xác nhận những thông tin trên.
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="btn btn-primary btn-md" type="submit">Đặt hàng</button>
+                            </form>
+                          </div>
+                          <div class="card-footer bg-warning text-muted">Vui lòng nhập đầy đủ thông tin vào phiếu này
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                    </div>
+                  </div>
+                </div>
+
             </li>
           </ul>
         </div>
-      </nav>
-      <!-- detail produce -->
-      <Div style="padding: 5px;" >
-        <div class="row">
-          <div class="col-lg-5 col-sm-12" > <h4 class="font-weight-bold" style="display: inline; font-size: 22px" >Điện thoại Samsung Galaxy Note 10 Lite</h4></div>
-          <div class="col-lg-7 col-sm-12" style="display: inline;" >
-            <!-- rating result with star -->
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <small class="text-muted font-weight-lighter user-select-none">513 Lượt đánh giá</small> 
-          </div>
-        </div>
-        <!-- img zoom hover -->
-        <div class="row ml-2 mt-2" >         
-          <figure id="magnifying_area" class="col-md-5 col-sm-12" >
-            <img id="magnifying_img" class="col-md-5 col-sm-12" src="https://cdn.tgdd.vn/Products/Images/42/206176/samsung-galaxy-note-10-plus-den-400x460-400x460.png"   alt="">
-          </figure>    
+      </div>
 
-          <div class="col-md-7 col-sm-12 mt-2" >
-            <ul class="list-group mt-2">
-              <li class="list-group-item"><h4 class="h5 font-weight-bold">Galaxy Note 10 Lite</h4></li>
-              <li class="list-group-item"><h4 class="h5" style="color: rgb(211, 15, 15);">15.990.000₫
-                <small class="font-weight-light mb-2 text-muted" style="display: inline;"><strike>17.990.000đ</strike></small> 
-                <small  style="color: rgb(202, 15, 15); font-size: 13px;">-11%</small>
-                <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label></h4>
-              </li>
-              <li class="list-group-item">
-                <span>Hoàn trả lại tiền <div style="color: red;display: inline;">khi sản phẩm lỗi do nhà sản xuất</div></span>
-              </li>
-              <li class="list-group-item">
-                  <b>Khuyến mãi</b> : Tai nghe bluetooth, Sạc dự phòng
-              </li>
-              <li class="list-group-item">
-                  <label for="clb">Chọn thêm các dịch vụ <b style="color: red;">miễn phí chỉ có ở TGDĐ</b></label>
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Giao ngay từ cửa hàng gần bạn nhất
-                      </label>
-                  </div>
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Chuyển danh bạ dữ liệu sang máy mới
-                      </label>
-                  </div>
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                      <label class="form-check-label" for="defaultCheck1">
-                        Trang trí miếng dán màn hình
-                      </label>
-                  </div>
-              </li>
-              <li class="list-group-item">
-                  <button class="btn btn-primary ml-3" onclick="ThemMatHang()">Thêm vào giỏ hàng</button>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBack" >
-                      Đặt hàng
-                  </button>
-                  <div class="modal fade" id="staticBack" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-xl"> <!--modal-xl làm size lớn hơn(extra large)-->
-                      <div class="modal-content">
-                          <div class="modal-header bg-primary">
-                              <h5 class="modal-title" id="exampleModalLabel">Điền thông tin khách hàng</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                              </button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="col-lg-12 col-sm-12 m-auto">
-                              <div class="card">
-                                <div class="card-body">
-                                  <form class="needs-validation" novalidate>
-                                    <div class="form-row">
-                                      
-                                      <div class="col-md-6 mb-3">
-                                        <label for="validationCustom02">Họ và Tên </label>
-                                        <input type="text" class="form-control" id="validationCustom02" placeholder="Họ và Tên" value=""
-                                          required>
-                                        <div class="valid-feedback">
-                                          Tên đẹp đấy!
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6 mb-3">
-                                        <label for="phone">Số Điện Thoại</label>
-                                        <div class="input-group">
-                                          
-                                          <input type="text" class="form-control" id="phone" placeholder="Số điện thoại của bạn"
-                                            aria-describedby="inputGroupPrepend" required>
-                                          <div class="invalid-feedback">
-                                            Hãy nhập số điện thoại của bạn!
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="form-row">
-                                      <div class="col-md-6 mb-3">
-                                        <label for="validationCustom03">Tỉnh thành</label>
-                                        <input type="text" class="form-control" id="validationCustom03" placeholder="Tỉnh thành" required>
-                                        <div class="invalid-feedback">
-                                          Hãy điền tỉnh hoặc thành phố của bạn.
-                                        </div>
-                                      </div>
-                                      <div class="col-md-6 mb-3">
-                                        <label for="validationCustom04">Địa chỉ nhà</label>
-                                        <input type="text" class="form-control" id="validationCustom04" placeholder="Địa chỉ cụ thể" required>
-                                        <div class="invalid-feedback">
-                                          Hãy nhập địa chỉ nhà chính xác.
-                                        </div>
-                                      </div>
-                                      <div class="col-md-12 mb-3">
-                                        <label for="validationCustom05">Hình thức thanh toán</label>
-                                        <select class="form-control" id="" placeholder="Đặt cọc trước 50%">
-                                          <option value="tt">Thanh toán trực tiếp khi nhận hàng</option>
-                                          <option value="c50">Đặt cọc trước 50%</option>
-                                          <option value="mm">Thanh toán qua ví Momo</option>
-                                          <option value="atm">Chuyển khoảng bằng qua thẻ ATM</option>
-                                        </select>
-                                      </div>
-                                      <div class="col-md-12 mb-3">
-                                        <label for="formGroupExampleInput2">Ghi chú</label>
-                                        <textarea class="form-control" id="ghichu" placeholder="Nhập ghi chú (nếu có)" row="3"></textarea>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                        <label class="form-check-label" for="invalidCheck">
-                                          Xác nhận những thông tin trên là chính xác.
-                                        </label>
-                                        <div class="invalid-feedback">
-                                          Bạn phải xác nhận những thông tin trên.
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <button class="btn btn-primary btn-md" type="submit">Đặt hàng</button>
-                                  </form>
-                                </div>
-                                <div class="card-footer bg-warning text-muted">Vui lòng nhập đầy đủ thông tin vào phiếu này</div>
-                              </div>
-                            </div> 
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-                          </div>
-                      </div>
-                  </div>
-                  
-              </li>
-            </ul>
-          </div>
-        </div>
-      
       <!-- Thông tin cụ thể của sản phẩm -->
-      <div >
+      <div>
         <h2 class="card-header bg-warning"> Đặc điểm nổi bật của Samsung Galaxy Note 10 Lite</h2>
         <p class="lead font-weight-bold">
-          Trông ngoại hình khá giống nhau, tuy nhiên <a href="#">Galaxy Note 10+</a> 
-          sở hữu khá nhiều điểm khác biệt so với Galaxy Note 10 và đây được xem 
-          là một trong những chiếc máy đáng mua nhất trong năm 2019, đặc biệt 
+          Trông ngoại hình khá giống nhau, tuy nhiên <a href="#">Galaxy Note 10+</a>
+          sở hữu khá nhiều điểm khác biệt so với Galaxy Note 10 và đây được xem
+          là một trong những chiếc máy đáng mua nhất trong năm 2019, đặc biệt
           dành cho những người thích một chiếc máy màn hình lớn, camera chất lượng hàng đầu.
         </p>
       </div>
@@ -231,43 +254,47 @@
         <div class="col-md-7 col-sm-12">
           <!-- carousel -->
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="https://cdn.tgdd.vn/Products/Images/42/206176/Slider/-vi-vn-samsung-galaxy-note-10-plus-tinhnang-copy.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://cdn.tgdd.vn/Products/Images/42/206176/Slider/-samsung-galaxy-note-10-plus-thietke.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="https://cdn.tgdd.vn/Products/Images/42/206176/Slider/-samsung-galaxy-note-10-plus-thaotac.jpg" class="d-block w-100" alt="...">
-                </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://cdn.tgdd.vn/Products/Images/42/206176/Slider/-vi-vn-samsung-galaxy-note-10-plus-tinhnang-copy.jpg"
+                  class="d-block w-100" alt="...">
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="carousel-item">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/206176/Slider/-samsung-galaxy-note-10-plus-thietke.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.tgdd.vn/Products/Images/42/206176/Slider/-samsung-galaxy-note-10-plus-thaotac.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div> <!--carousel-->
         </div>
         <!-- Thông tin sản phẩm -->
-        <div class="col-md-5 col-sm-12" >
+        <div class="col-md-5 col-sm-12">
           <h4 class="header font-weight-bold">Thông số kỹ thuật</h4>
-          
+
           <table class="table table-primary table-hover">
             <tbody>
               <tr class="font-weight-bold">
                 <th scope="row">Màn hình:</th>
                 <td>Dynamic AMOLED, 6.8", Quad HD+ (2K+)</td>
-                
+
               </tr>
               <tr class="font-weight-bold">
                 <th scope="row">Hệ điều hành:</th>
                 <td>Android 9 (Pie)</td>
               </tr>
-              
+
               <tr class="font-weight-bold">
                 <th scope="row">CPU:</th>
                 <td>Exynos 9825 8 nhân</td>
@@ -276,137 +303,137 @@
                 <th scope="row">RAM:</th>
                 <td>12GB</td>
               </tr>
-              <tr class="font-weight-bold"> 
+              <tr class="font-weight-bold">
                 <th scope="row">Bộ nhớ trong:</th>
                 <td>Dung lượng lên đến 256GB</td>
               </tr>
             </tbody>
-          </table>             
+          </table>
         </div>
       </div>
-      </Div>
+    </Div>
 
 
 
-      <!-- Footer -->
-      <footer class="page-footer font-small teal pt-4 bg-dark" style="margin: 10px; ">
-          <!-- Footer Text -->
-          <div class="container-fluid text-center text-md-left">
-          <!-- Grid row -->
-          <div class="row">
-              <!-- Grid column -->
-              <div class="col-md-6 mt-md-0 mt-3">
-              <!-- Content -->
-              <ul>
-                  <li><a href="#">Chính sách và bảo mật</a></li>
-                  <li><a href="#">Điều khoản sử dụng</a></li>
-                  <li><a href="#">Tuyển dụng</a></li>
-                  <li><a href="#">Chính sách bảo hành</a></li>
-                  <li><a href="#">Chính sách đổi trả</a></li>
-              </ul>
-              </div>
-              <!-- Grid column -->
-              <hr class="clearfix w-100 d-md-none pb-3">
-              <!-- Grid column -->
-              <div class="col-md-6 mb-md-0 mb-3">
-              <!-- Content -->
-              <ul>
-                  <li><a href="#">Giới thiệu công ty</a></li>
-                  <li><a href="#">Tìm siêu thị (2.110 shop)</a></li>
-                  <li><a href="#">Hướng dẫn thanh toán online</a></li>
-                  <li><a href="#">In hóa đơn điện tử</a></li>
-                  <li><a href="#">Góp Ý</a></li>
-              </ul>
-              </div>
-              <!-- Grid column -->
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4 bg-dark" style="margin: 10px; ">
+      <!-- Footer Text -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <ul>
+              <li><a href="#">Chính sách và bảo mật</a></li>
+              <li><a href="#">Điều khoản sử dụng</a></li>
+              <li><a href="#">Tuyển dụng</a></li>
+              <li><a href="#">Chính sách bảo hành</a></li>
+              <li><a href="#">Chính sách đổi trả</a></li>
+            </ul>
           </div>
-          <!-- Grid row -->
+          <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none pb-3">
+          <!-- Grid column -->
+          <div class="col-md-6 mb-md-0 mb-3">
+            <!-- Content -->
+            <ul>
+              <li><a href="#">Giới thiệu công ty</a></li>
+              <li><a href="#">Tìm siêu thị (2.110 shop)</a></li>
+              <li><a href="#">Hướng dẫn thanh toán online</a></li>
+              <li><a href="#">In hóa đơn điện tử</a></li>
+              <li><a href="#">Góp Ý</a></li>
+            </ul>
           </div>
-          <!-- Footer Text -->
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Text -->
 
-          <!-- Copyright -->
-          <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
-          <a href="#"> nguyentronglinh045@gmail.com</a>
-          </div>
-          <!-- Copyright -->
-      </footer>
-      <!-- Footer -->
-    </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+        <a href="#"> example@gmail.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
 
-    <!-- back to top button -->
-    <script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
-      
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
+  <!-- back to top button -->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
       }
-      
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-    <!-- Zoom img -->
-    <script>
-      var magnifying_area = document.getElementById("magnifying_area");
-      var magnifying_img = document.getElementById("magnifying_img");
-      magnifying_area.addEventListener("mousemove",function(){
+    }
 
-          clientX = event.clientX - magnifying_area.offsetLeft
-          clientY = event.clientY - magnifying_area.offsetTop
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- Zoom img -->
+  <script>
+    var magnifying_area = document.getElementById("magnifying_area");
+    var magnifying_img = document.getElementById("magnifying_img");
+    magnifying_area.addEventListener("mousemove", function () {
 
-          mWidth = magnifying_area.offsetWidth
-          mHeight = magnifying_area.offsetHeight
+      clientX = event.clientX - magnifying_area.offsetLeft
+      clientY = event.clientY - magnifying_area.offsetTop
 
-          clientX = clientX / mWidth * 100
-          clientY = clientY / mHeight * 100
+      mWidth = magnifying_area.offsetWidth
+      mHeight = magnifying_area.offsetHeight
 
-          magnifying_img.style.transform = 'translate(-'+clientX+'%, -'+clientY+'%) scale(2)'
-      });
-      magnifying_area.addEventListener("mouseleave",function(){
-          magnifying_img.style.transform = 'translate(-50%,-50%) scale(1)'
-      });
-    </script>
-    <!-- check form -->
-    <script type="text/javascript">
-      function ThemMatHang(){
-          alert ("Đã thêm mặt hàng vào giỏ hàng !");       
-      }
-      function GioHang(){
-        alert("Bạn chưa thêm mặt hàng nào!")
-      }
-    </script>
-    <!-- form submit -->
-    <script>
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
+      clientX = clientX / mWidth * 100
+      clientY = clientY / mHeight * 100
+
+      magnifying_img.style.transform = 'translate(-' + clientX + '%, -' + clientY + '%) scale(2)'
+    });
+    magnifying_area.addEventListener("mouseleave", function () {
+      magnifying_img.style.transform = 'translate(-50%,-50%) scale(1)'
+    });
+  </script>
+  
+  
+  <!-- form submit -->
+  <script>
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
         var forms = document.getElementsByClassName('needs-validation');
         // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
           }, false);
         });
-        }, false);
-      })();
-    </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+      }, false);
+    })();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

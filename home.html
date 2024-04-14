@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Web xin 300k</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body >
+    <div class="container" >
+      
+      <!-- back to top button -->
+      <button onclick="topFunction()" id="myBtn" title="Về đầu trang"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+      <!-- navbar1 -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./home.html" style="color: yellow;"><i>thegioididong.com</i> </a>
+        <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Bạn tìm gì.." aria-label="Search">
+            
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" "><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ hàng <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lịch sử mua hàng</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mặt hàng
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./list_item.html"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp; Điện thoại</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;Laptop</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-tablet" aria-hidden="true"></i>&nbsp;Tablet</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;PC,Máy in</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Đồng hồ thông minh</a>
+                <a class="dropdown-item" href="#">Đồng hồ thời trang</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Máy cũ giá rẻ</a>
+                <a class="dropdown-item" href="#">Sim, Thẻ cào</a>
+                <a class="dropdown-item" href="#">Trả góp, Điện nước</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>24h công nghệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html"><i class="fa fa-question" aria-hidden="true"></i>Hỏi đáp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-wrench" aria-hidden="true"></i>Hỗ trợ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     
+      <!-- carousel -->
+      <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="3000">
+            <img src="https://cdn.tgdd.vn/2020/09/banner/iphone-hotsale-800-300-800x300-4.png" class="d-block w-100" alt="banner1">
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img src="https://cdn.tgdd.vn/2020/10/banner/iphone-12-800-300-800x300-3.png" class="d-block w-100" alt="banner3">
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img src="https://cdn.tgdd.vn/2020/09/banner/Normal-Note20-800-300-800x300.png" class="d-block w-100" alt="banner2">
+          </div>
+          <div class="carousel-item" data-interval="3000">
+            <img src="https://cdn.tgdd.vn/2020/09/banner/big-pk-800-300-800x300.png" class="d-block w-100" alt="banner3">
+          </div>
+        </div>
+        
+      </div>  <!--end carousel-->   
+
+      <!-- long img -->
+      <a href="#"><img src="https://cdn.tgdd.vn/2020/08/banner/laptop-chung-1200-75-1200x75.png" class="img-fluid" alt="Long img"></a>
+      
+      <!-- Thông tin 20 sản phẩm -->
+      <div id="section1" class="card-header bg-primary mb-1" ><h4>20 KHUYẾN MÃI HOT NHẤT</h4></div>
+      
+      <!-- carousel thông tin sản phẩm -->
+      <div id="carouselExampleFade" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner">
+          <!-- carousel item 1 -->
+          <div class="carousel-item active" data-interval="3000" >
+              
+            <div class="card-deck ">
+              <!-- item 1 -->             
+
+              <div class="card mb-4  ">
+                <div >
+                  <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                </div>
+                <img src="https://cdn.tgdd.vn/Products/Images/42/200533/TimerThumb/iphone-11-pro-max-(25).jpg" class="card-img-top w-0" alt="...">
+                <div class="card-body">
+                  <a href="./detail.html" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Iphone 11 Pro Max </a>
+                  <div style="display: inline;">
+                      <p class="card-text font-weight-bolder " style="color: red;display: inline;">16.490.000đ</p>
+                  </div>
+                  <p class="font-weight-light-bold">Giảm thêm <b>300.000đ</b></p>
+                  <div>
+                    <!-- rating result with star -->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <small class="text-muted font-weight-lighter user-select-none">327 Lượt</small> 
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card mb-4 ">
+                <div>
+                    <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                </div>
+                <img src="https://cdn.tgdd.vn/Products/Images/42/228453/vivo-v20-600-xanh-hong-200x200.jpg" class="card-img-top" alt="Vivo V20">
+                <div class="card-body">
+                    
+                  <a href="./detail.html" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Vivo V20</a> 
+                                        
+                  <p class="font-weight-bolder " style="color: red;">8.490.000đ</p>
+                  <div>
+                    <!-- rating result with star -->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <small class="text-muted font-weight-lighter user-select-none">37 Lượt</small> 
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+              <div class="card mb-4 ">
+                <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                <img src="https://cdn.tgdd.vn/Products/Images/42/228136/xiaomi-mi-10t-pro-300420-070407-400x400.jpg" class="card-img-top" alt="Xiaomi">
+                <div class="card-body">
+                  <a href="./detail.html" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Xiaomi Mi 10T Pro 5G</a>
+                  
+                  <p class="card-text font-weight-bolder " style="color: red;">12.990.000đ</p>
+                  <div>
+                    <!-- rating result with star -->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <small class="text-muted font-weight-lighter user-select-none">37 Lượt</small> 
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4 ">
+                <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                <img src="https://cdn.tgdd.vn/Products/Images/42/220649/oppo-a52-black-600x600-400x400.jpg" class="card-img-top" alt="Oppo">
+                <div class="card-body">
+                  <a href="#" class="card-title text-decoration-none" style="font-size: 15px;display: block;">OPPO A52</a>
+                  <label for=""><span class="badge badge-danger font-weight-light ml-1">Giảm giá &nbsp;<b>5%</b></span></label>
+                  <div style="display: inline;">
+                    <p class="card-text font-weight-bolder " style="color: red;display: inline;">5.690.000đ</p>
+                    <small class="font-weight-light mb-2 text-muted" style="display: inline;"><strike>5.990.000đ</strike></small>                        
+                  </div>
+                  <div>
+                    <!-- rating result with star -->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <small class="text-muted font-weight-lighter user-select-none">37 Lượt</small> 
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+              <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+            </div>
+              
+         </div> 
+         <!-- carousel item 2  -->
+         <div class="carousel-item" data-interval="2500" >
+                    
+            <div class="card-deck">                
+
+              <div class="card mb-4 ">
+                <div>
+                  <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                </div>
+                <img src="https://cdn.tgdd.vn/Products/Images/42/225734/iphone-8-plus-128gb-082720-052716-400x400.jpg" class="card-img-top" alt="iphone 8 plus">
+                <div class="card-body">
+                  <a href="#" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Iphone 8 Plus 128GB </a>
+                  <div style="display: inline;">
+                    <p class="card-text font-weight-bolder " style="color: red;display: inline;">14.990.000đ</p>
+                  </div>
+                  <p class="font-weight-light-bold">Giảm thêm <b>1.500.000đ</b></p>
+                  <small class="font-weight-light">Tặng máy lọc không khí</small>
+                  
+                    
+                </div>
+              </div>
+
+              <div class="card mb-4 ">
+                <div>
+                    <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                </div>
+                <img src="https://cdn.tgdd.vn/Products/Images/42/219208/TimerThumb/vsmart-joy-3-4gb-(5).jpg" class="card-img-top" alt="Vsmart Joy">
+                <div class="card-body">
+                  <a href="#" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Vsmart Joy3 (4GB/64GB)</a>
+                  <label for=""><span class="badge badge-danger font-weight-light ml-1">Giảm giá &nbsp;<b>9%</b></span></label>
+                  <div style="display: inline;">
+                    <p class="card-text font-weight-bolder " style="color: red;display: inline;">2.990.000đ</p>&nbsp;
+                    <small class="font-weight-light mb-2 text-muted" style="display: inline;"><strike>3.290.000đ</strike></small>
+                  </div>
+                  <small class="font-weight-light">Tặng phiếu mua hàng trị giá 200.000đ</small>
+                </div>
+              </div>
+              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+              <div class="card mb-4 ">
+                <div>
+                    <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                </div>
+                <img src="https://cdn.tgdd.vn/Products/Images/42/219913/vivo-y50-tim-600x600-2-400x400.jpg" class="card-img-top" alt="Vivo Y50">
+                <div class="card-body">
+                    
+                  <a href="#" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Vivo Y50</a>
+                  
+                  <label for=""><span class="badge badge-danger font-weight-light ml-1">Giảm giá &nbsp;<b>14%</b></span></label>
+                  <div style="display: inline;">
+                    <p class="card-text font-weight-bolder " style="color: red;display: inline;">5.990.000đ</p>&nbsp;
+                    <small class="font-weight-light mb-2 text-muted" style="display: inline;"><strike>6.290.000đ</strike></small>
+                  </div>
+                  <div>
+                    <!-- rating result with star -->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <small class="text-muted font-weight-lighter user-select-none">12 Lượt</small> 
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4 ">
+                <div>
+                    <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                </div>
+                <img src="https://cdn.tgdd.vn/Products/Images/42/219895/realme-6-8gb-600x600-400x400.jpg" class="card-img-top" alt="realme-6-8gb">                   
+                <div class="card-body">
+                  <a href="#" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Realme 6 (8GB/128GB)</a>
+                  <label for=""><span class="badge badge-danger font-weight-light ml-1">Giảm giá &nbsp;<b>7%</b></span></label>
+                  <div style="display: inline;">
+                    <p class="card-text font-weight-bolder " style="color: red;display: inline;">6.490.000đ</p>
+                    <small class="font-weight-light mb-2 text-muted" style="display: inline;"><strike>6.990.000đ</strike></small>                     
+                  </div>
+                  <div>
+                    <!-- rating result with star -->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <small class="text-muted font-weight-lighter user-select-none">59 Lượt</small> 
+                  </div>
+                    
+                </div>
+              </div>
+              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+              <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+            
+          </div>
+         </div>
+         <!-- carousel item 3 -->
+         <div class="carousel-item " data-interval="2500" >
+            
+            <div class="card-deck ">
+
+              <div class="card mb-4 ">
+                <div>
+                  <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                </div>
+                <img src="https://cdn.tgdd.vn/Products/Images/7077/229055/apple-watch-s6-44mm-vien-nhom-day-cao-su-ava-400x400.jpg" class="card-img-top" alt="Apple watch">
+                <div class="card-body">
+                  <a href="#" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Apple Watch S6  </a>
+                  <label for=""><span class="badge badge-light font-weight-light ml-1">Nghe và gọi trên đồng hồ</span></label>
+                  <div style="display: inline;">
+                    <p class="card-text font-weight-bolder " style="color: red;display: block;">13.990.000đ</p>
+                  </div>
+                  <div>
+                    <!-- rating result with star -->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <small class="text-muted font-weight-lighter user-select-none">42 Lượt</small> 
+                </div>
+                  
+                </div>
+              </div>
+
+              <div class="card mb-4 ">
+                
+                <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                <img src="https://cdn.tgdd.vn/Products/Images/522/202820/ipad-mini-79-inch-wifi-cellular-64gb-2019-gold-400x400.jpg" class="card-img-top" alt="Ipad mini">
+                <div class="card-body">
+                    
+                  <a href="#" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Ipad Mini 7.9 inch 64GB</a> 
+                  <label for=""><span class="badge badge-danger">Giảm giá&nbsp;<b>6%</b></span></label>     
+                  <div style="display: inline;">                
+                    <span class="font-weight-bolder " style="color: red;">13.490.000đ</span>
+                    <small class="font-weight-light mb-2 text-muted" ><strike>15.990.000đ</strike></small>
+                  </div>  
+                  <small class="font-weight-light">Quà 100.000đ</small>
+                </div>
+              </div>
+              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+              
+              <div class="card mb-4 ">
+                <div>
+                    <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                </div>
+                <img src="https://cdn.tgdd.vn/Products/Images/42/227731/realme-7-043120-113116-400x400.jpg" class="card-img-top" alt="Realme 7">
+                <div class="card-body">
+                  <a href="#" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Realme 7</a>                    
+                  <p class="card-text font-weight-bolder " style="color: red;">6.990.000đ</p>
+                  <small class="font-weight-light">Tặng sạc dự phòng cao cấp, phiếu mua hàng 200.000</small>
+                </div>
+              </div>
+
+              <div class="card mb-4 ">
+                <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>                        
+                <img src="https://cdn.tgdd.vn/Products/Images/42/219314/samsung-galaxy-a21s-055620-045659-400x400.jpg" class="card-img-top" alt="Oppo">
+                <div class="card-body">
+                  <a href="#" class="card-title text-decoration-none" style="font-size: 15px;display: block;">Samsung Galaxy A21s</a>
+                  <label for=""><span class="badge badge-danger font-weight-light ml-1">Giảm giá &nbsp;<b>10%</b></span></label>
+                  <div style="display: inline;">
+                    <p class="card-text font-weight-bolder " style="color: red;display: inline;">5.090.000đ</p>
+                    <small class="font-weight-light mb-2 text-muted" style="display: inline;"><strike>5.690.000đ</strike></small>                        
+                  </div>
+                  <div>
+                    <!-- rating result with star -->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <small class="text-muted font-weight-lighter user-select-none">37 Lượt</small> 
+                  </div>
+                </div>
+              </div>
+              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+              <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+            </div>
+           
+         </div> 
+        </div>
+        
+      </div> <!--end carousel-->
+
+      <!-- Group item 1 -->
+      <div id="section2" class="card-header bg-warning mb-1" ><h4>ĐIỆN THOẠI NỔI BẬT </h4></div>
+      
+      <div class="card-deck">
+        
+        <div class="card mb-3 ">
+          <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>
+          <img class="card-img-top img-fluid" src="https://cdn.tgdd.vn/Products/Images/42/229056/oppo-a93-230520-060532-200x200.jpg" alt="Oppo A93">
+          <div class="card-body">
+            <a href="#" class="card-title text-decoration-none" style="font-size: 15px;">OPPO A93</a>
+            <div style="display: inline;">
+              <p class="card-text font-weight-bolder " style="color: red;">7.490.000đ</p>
+            </div>
+            <div>
+              <!-- rating result with star -->
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <small class="text-muted font-weight-lighter user-select-none">37 Lượt đánh giá</small> 
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3 ">
+          <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>
+          <img class="card-img-top img-fluid" src="https://cdn.tgdd.vn/Products/Images/42/153856/iphone-11-red-400x400.jpg" alt="Iphone 11">
+          <div class="card-body">
+            <a href="./detail.html" class="card-title text-decoration-none" style="font-size: 15px;">Iphone 11 64GB</a>
+            <div style="display: inline;">
+              <p class="card-text font-weight-bolder " style="color: red;">19.990.000đ</p>
+              
+            </div>
+            <small class="font-weight-light">Giảm thêm <b> 2.000.000đ</b></small>
+            <div>
+              <!-- rating result with star -->
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <small class="text-muted font-weight-lighter user-select-none">7 Lượt đánh giá</small> 
+            </div>
+          </div>
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        
+        <div class="card mb-3 ">
+          <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>
+          <img class="card-img-top img-fluid" src="https://cdn.tgdd.vn/Products/Images/42/217308/xiaomi-redmi-9-114620-094644-400x400.jpg" alt="Xiaomi redmi-9">
+          <div class="card-body">
+            <a href="./detail.html" class="card-title text-decoration-none" style="font-size: 15px;">Xiaomi Redmi9 (4GB/64GB)</a>
+            <div style="display: inline;">
+              <p class="card-text font-weight-bolder " style="color: red;">3.990.000đ</p>
+              
+            </div>
+            <small class="font-weight-light">Giảm thêm <b> 2.000.000đ</b></small>
+            <div>
+              <!-- rating result with star -->
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <small class="text-muted font-weight-lighter user-select-none">193 Lượt đánh giá</small> 
+            </div>
+          </div>
+        </div>
+        
+        <div class="card mb-3 ">
+          <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>
+          <img class="card-img-top img-fluid" src="https://cdn.tgdd.vn/Products/Images/42/228888/vsmart-joy-4-4gb-64gb-234220-094202-400x400.jpg" alt="vsmart-joy-4gb">
+          <div class="card-body">
+            <a href="#" class="card-title text-decoration-none" style="font-size: 15px;">Vsmart Joy 4 (4GB/64GB)</a>
+            <div style="display: inline;">
+              <p class="card-text font-weight-bolder " style="color: red;">3.590.000đ</p>
+              
+            </div>
+            <div>
+              <!-- rating result with star -->
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <small class="text-muted font-weight-lighter user-select-none">13 Lượt đánh giá</small> 
+            </div>
+          </div>
+        </div> 
+        
+      <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+      </div>
+      <!-- Group item 2 -->
+      <div id="section3" class="card-header bg-warning mb-1" ><h4>PHỤ KIỆN GIÁ RẺ</h4></div>       
+      
+      <div class="card-deck">
+        <div class="card mb-3">
+          <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>
+          <img class="card-img-top img-fluid" src="https://cdn.tgdd.vn/Products/Images/54/213711/tai-nghe-bluetooth-airpods-pro-apple-mwp22-ava-400x400.jpg" alt="Tai nghe bluetooth">
+          <div class="card-body">
+            <a href="#" class="card-title text-decoration-none" style="font-size: 15px;">Tai nghe bluetooth sạc không dây</a>
+            <div style="display: inline;">
+              <p class="card-text font-weight-bolder " style="color: red;">6.490.000đ</p>
+            </div>
+            <small>Quà 100.000đ</small>
+            <div>
+              <!-- rating result with star -->
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <small class="text-muted font-weight-lighter user-select-none">37 Lượt đánh giá</small> 
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>
+          <img class="card-img-top img-fluid" src="https://cdn.tgdd.vn/Products/Images/2162/227186/loa-bluetooth-lg-xboom-go-pl5-xanh-den-600x600-1-400x400.jpg" alt="loa-bluetooth-lg-xboom">
+          <div class="card-body">
+            <a href="./detail.html" class="card-title text-decoration-none" style="font-size: 15px;">Loa Bluetooth LG Xboom Xanh Đen</a>
+            <div style="display: inline;">
+              <p class="card-text font-weight-bolder " style="color: red;">3.990.000đ</p>
+              
+            </div>
+            <div>
+              <!-- rating result with star -->
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <small class="text-muted font-weight-lighter user-select-none">1 Lượt đánh giá</small> 
+            </div>
+          </div>
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+        <div class="card mb-3">
+          <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>
+          <img class="card-img-top img-fluid" src="https://cdn.tgdd.vn/Products/Images/54/228214/tai-nghe-chup-tai-bluetooth-sony-wh-xb900n-ava-400x400.jpg" alt="Tai nghe chup tai">
+          <div class="card-body">
+            <a href="./detail.html" class="card-title text-decoration-none" style="font-size: 15px;">Tai nghe chụp tai Bluetooth Sony</a>
+            <div style="display: inline;">
+              <p class="card-text font-weight-bolder " style="color: red;">5.990.000đ</p>
+              
+            </div>
+            <small class="font-weight-light">Giảm thêm <b> 2.000.000đ</b></small>
+            <div>
+              <!-- rating result with star -->
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <small class="text-muted font-weight-lighter user-select-none">3 Lượt đánh giá</small> 
+            </div>
+          </div>
+        </div>
+        
+        <div class="card mb-3">
+          <label for=""><span class="badge badge-warning ml-2">Trả góp<b>0%</b></span></label>
+          <img class="card-img-top img-fluid" src="https://cdn.tgdd.vn/Products/Images/2162/225536/loa-bluetooth-sony-extra-bass-srs-xb23-den-av-600x600-1-400x400.jpg" alt="Loa bluetooth sony">
+          <div class="card-body">
+            <a href="./detail.html" class="card-title text-decoration-none" style="font-size: 15px;">Loa bluetooth Sony Extra Bass</a>
+            <div style="display: inline;">
+              <p class="card-text font-weight-bolder " style="color: red;">2.590.000đ</p>
+              
+            </div>
+            <div>
+              <!-- rating result with star -->
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <small class="text-muted font-weight-lighter user-select-none">13 Lượt đánh giá</small> 
+            </div>
+          </div>
+        </div>
+        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+         <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="page-footer font-small teal pt-4 bg-dark" style="margin: 10px; ">
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+              <!-- Content -->
+              <ul>
+                <li><a href="#">Chính sách và bảo mật</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-6 mb-md-0 mb-3">
+              <!-- Content -->
+              <ul>
+                <li><a href="#">Giới thiệu công ty</a></li>
+                <li><a href="#">Tìm siêu thị (2.110 shop)</a></li>
+                <li><a href="#">Hướng dẫn thanh toán online</a></li>
+                <li><a href="#">In hóa đơn điện tử</a></li>
+                <li><a href="#">Góp Ý</a></li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Text -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+          <a href="#"> nguyentronglinh045@gmail.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div> <!--container-->
+
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+          
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

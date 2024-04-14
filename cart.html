@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Hỗ Trợ</title>
+
+
+</head>
+
+<body>
+  <div class="container d-flex h-100 flex-column justify-content-between">
+    <button onclick="topFunction()" id="myBtn" title="Về đầu trang"><i class="fa fa-arrow-up"
+        aria-hidden="true"></i></button>
+    <div class="d-flex flex-column" style="height: 100vh;">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./home.html" style="color: yellow;"><i>thegioididong.com</i> </a>
+        <!--thương hiệu-->
+        <button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <form class="form-inline"> <!--khung tm kiếm-->
+            <input class="form-control mr-sm-0" type="search" placeholder="Bạn tìm gì.. " aria-label="Search">
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" onclick="GioHang()"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ
+                hàng <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lịch sử mua hàng</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Mặt hàng
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="./list_item.html"><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;
+                  Điện thoại</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;Laptop</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-tablet" aria-hidden="true"></i>&nbsp;Tablet</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;PC,Máy in</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Đồng hồ thông minh</a>
+                <a class="dropdown-item" href="#">Đồng hồ thời trang</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Máy cũ giá rẻ</a>
+                <a class="dropdown-item" href="#">Sim, Thẻ cào</a>
+                <a class="dropdown-item" href="#">Trả góp, Điện nước</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>24h công nghệ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html"><i class="fa fa-question" aria-hidden="true"></i>Hỏi đáp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-wrench" aria-hidden="true"></i>Hỗ Trợ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container mt-5 mb-5 flex-grow-1">
+        <div class="d-flex justify-content-center row">
+          <div class="col-lg-12 col-md-8">
+            <div class="p-2">
+              <h2>Shopping cart</h2>
+              <div class="d-flex flex-row align-items-center pull-right"><span class="mr-1">Sort by:</span><span
+                  class="mr-1 font-weight-bold">Price</span><i class="fa fa-angle-down"></i></div>
+            </div>
+            <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
+              <div class="mr-1"><img class="rounded" src="https://i.imgur.com/XiFJkhI.jpg" width="70"></div>
+              <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">
+                  Basic T-shirt
+                </span>
+                <div class="d-flex flex-row product-desc">
+                  <div class="size mr-1">
+                    <span class="text-grey">Size:</span>
+                    <span class="font-weight-bold">&nbsp;M </span>
+                  </div>
+                  <div class="color"><span class="text-grey">Color:</span>
+                    <span class="font-weight-bold">&nbsp;Grey</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-row align-items-center qty">
+                <i class="fa fa-minus text-danger"></i>
+                <h5 class="text-grey mt-1 mr-1 ml-1">2</h5>
+                <i class="fa fa-plus text-success"></i>
+              </div>
+              <div>
+                <h5 class="text-grey">$20.00</h5>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa fa-trash mb-1 text-danger"></i>
+              </div>
+            </div>
+            
+            <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><input type="text"
+                class="form-control border-0 gift-card" placeholder="discount code/gift card"><button
+                class="btn btn-outline-warning btn-sm ml-2" type="button">Apply</button></div>
+            <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><button
+                class="btn btn-warning btn-block btn-lg ml-2 pay-button" type="button">Proceed to Pay</button></div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Footer -->
+      <footer class="page-footer font-small teal pt-4 bg-dark" style="margin: 10px; ">
+        <!-- Footer Text -->
+        <div class="container-fluid text-center text-md-left">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+              <!-- Content -->
+              <ul>
+                <li><a href="#">Chính sách và bảo mật</a></li>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none pb-3">
+            <!-- Grid column -->
+            <div class="col-md-6 mb-md-0 mb-3">
+              <!-- Content -->
+              <ul>
+                <li><a href="#">Giới thiệu công ty</a></li>
+                <li><a href="#">Tìm siêu thị (2.110 shop)</a></li>
+                <li><a href="#">Hướng dẫn thanh toán online</a></li>
+                <li><a href="#">In hóa đơn điện tử</a></li>
+                <li><a href="#">Góp Ý</a></li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Text -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color: white;">© 2020 Copyright:
+          <a href="#"> nguyentronglinh045@gmail.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+    <!-- back to top button -->
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- Zoom img -->
+    <script>
+      var magnifying_area = document.getElementById("magnifying_area");
+      var magnifying_img = document.getElementById("magnifying_img");
+      magnifying_area.addEventListener("mousemove", function () {
+
+        clientX = event.clientX - magnifying_area.offsetLeft
+        clientY = event.clientY - magnifying_area.offsetTop
+
+        mWidth = magnifying_area.offsetWidth
+        mHeight = magnifying_area.offsetHeight
+
+        clientX = clientX / mWidth * 100
+        clientY = clientY / mHeight * 100
+
+        magnifying_img.style.transform = 'translate(-' + clientX + '%, -' + clientY + '%) scale(2)'
+      });
+      magnifying_area.addEventListener("mouseleave", function () {
+        magnifying_img.style.transform = 'translate(-50%,-50%) scale(1)'
+      });
+    </script>
+    <!-- check form -->
+    <script type="text/javascript">
+      function ThemMatHang() {
+        alert("Đã thêm mặt hàng vào giỏ hàng !");
+      }
+      function GioHang() {
+        alert("Bạn chưa thêm mặt hàng nào!")
+      }
+    </script>
+    <!-- form submit -->
+    <script>
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

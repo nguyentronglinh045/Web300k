@@ -1,22 +1,24 @@
-const cartsData = [
-  {
-    "Id": "f7932bfa-f946-4686-9d46-e1f56a6476ad",
-    "Name": "Galaxy Note 10 Lite",
-    "Price": 17990000,
-    "Image": "https://cdn.tgdd.vn/Products/Images/42/206176/samsung-galaxy-note-10-plus-den-400x460-400x460.png",
-    "Amount": 1
-  },
-  {
-    "Id": "f7932bfa-f946-4686-9d46-e1f56a6476ad",
-    "Name": "Galaxy Note 10 Lite",
-    "Price": 17990000,
-    "Image": "https://cdn.tgdd.vn/Products/Images/42/206176/samsung-galaxy-note-10-plus-den-400x460-400x460.png",
-    "Amount": 1
-  }
-]
+document.addEventListener("DOMContentLoaded", fetchData);
+
+function fetchData() {
+  fetch("http://localhost:8000/api/cart")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data)
+      renderProductInCart(data)
+    })
+    .catch((error) => {
+      console.error("There was a problem with your fetch operation:", error);
+    });
+}
 
 function renderProductInCart(cartsData) {
-  const allProductInCart = cartsData.map((cartsData, index) => (
+  const allProductInCart = cartsData.carts.map((cartsData, index) => (
     `<div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
               <div class="mr-1"><img class="rounded" src="${cartsData.Image}" width="70"></div>
               <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">
@@ -41,4 +43,4 @@ function renderProductInCart(cartsData) {
   document.querySelector('.cart-list').innerHTML = allProductInCart.join('')
 }
 
-renderProductInCart(cartsData)
+fetchData()

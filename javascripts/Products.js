@@ -28,7 +28,7 @@ function renderProducts(productsData) {
               <img src=${productsData.images}
                 class="card-img-top w-0" alt="...">
               <div class="card-body">
-                <a href="./detail.html" class="card-title text-decoration-none"
+                <a id="dynamic-link" href="./detail.html" class="card-title text-decoration-none"
                   style="font-size: 15px;display: block;">${productsData.products}</a>
                 <div style="display: inline;">
                   <p class="card-text font-weight-bolder " style="color: red;display: inline;">16.490.000đ</p>

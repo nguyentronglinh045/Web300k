@@ -28,8 +28,9 @@ function renderProducts(productsData) {
               <img src=${productsData.images}
                 class="card-img-top w-0" alt="...">
               <div class="card-body">
-                <a id="dynamic-link" href="./detail.html" class="card-title text-decoration-none"
-                  style="font-size: 15px;display: block;">${productsData.products}</a>
+                <button onclick="navigateDetail('${productsData.id}')" id="dynamic-link" href="./detail.html" class="card-title text-decoration-none"
+                  style="font-size: 15px;display: block;">${productsData.products}
+                </button>
                 <div style="display: inline;">
                   <p class="card-text font-weight-bolder " style="color: red;display: inline;">16.490.000đ</p>
                 </div>
@@ -49,6 +50,13 @@ function renderProducts(productsData) {
   );
   document.querySelector(".all-product").innerHTML = allProducts.join("");
 }
+
+
+function navigateDetail(id) {
+  console.log(id)
+  location.href = `http://127.0.0.1:5500/detail.html?id=${id}`
+} 
+
 // renderProducts()
 //   function displayData(data) {
 //     const dataContainer = document.getElementById('data-container');

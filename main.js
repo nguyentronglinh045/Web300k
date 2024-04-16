@@ -19,7 +19,7 @@ function fetchData() {
 }
 
 function fetchDataDetail(id) {
-  fetch(`http://localhost:8000/api/product/${id}`)
+  fetch(`http://localhost:8000/api/product/f7932bfa-f946-4686-9d46-e1f56a6476ad`)
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -81,8 +81,10 @@ function renderImg() {
 function renderProductionDescription(data) {
   const productDescriptionHeader = document.querySelector('.product-description-header');
   const productDescription = document.querySelector('.product-description');
+  const productImages = document.querySelector('#magnifying_area');
   productDescriptionHeader.textContent = 'Đặc điểm nổi bật của ' + data.product[0].products
   productDescription.textContent = data.product[0].description
+  productImages.innerHTML = `<img id="magnifying_img" src=${data.product[0].images} class="col-md-5 col-sm-12" alt=""></img>`
 }
 function convertToCurrency(amount) {
   const amountStr = Math.round(amount).toString();

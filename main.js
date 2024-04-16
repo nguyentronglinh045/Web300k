@@ -156,7 +156,7 @@ const amount = 20000;
 const convertedAmount = convertToCurrency(amount);
 console.log(convertedAmount); // Kết quả sẽ là "20.000đ"
 
-renderProductNameAndPRice();
+renderProductNameAndPrice();
 fetchData();
 renderImg();
 renderProductionDescription();

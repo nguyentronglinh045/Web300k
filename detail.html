@@ -32,7 +32,7 @@
         </form>
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="cart.html" ><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ
+            <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ
               hàng <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -91,8 +91,7 @@
       <!-- img zoom hover -->
       <div class="row ml-2 mt-2">
         <figure id="magnifying_area" class="col-md-5 col-sm-12">
-          <img id="magnifying_img" class="col-md-5 col-sm-12"
-            alt="">
+          <img id="magnifying_img" class="col-md-5 col-sm-12" alt="">
         </figure>
 
         <div class="col-md-7 col-sm-12 mt-2">
@@ -105,7 +104,7 @@
             </li>
             <li class="list-group-item">
               <span>Hoàn trả lại tiền <div style="color: red;display: inline;">khi sản phẩm lỗi do nhà sản xuất</div>
-                </span>
+              </span>
             </li>
             <li class="list-group-item">
               <b>Khuyến mãi</b> : Tai nghe bluetooth, Sạc dự phòng
@@ -132,7 +131,7 @@
               </div>
             </li>
             <li class="list-group-item">
-              <button class="btn btn-primary ml-3">Thêm vào giỏ hàng</button>
+              <button onclick="addCart()" class="btn btn-primary ml-3">Thêm vào giỏ hàng</button>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBack">
                 Đặt hàng
               </button>
@@ -239,7 +238,7 @@
       <div>
         <h2 class="card-header bg-warning product-description-header"></h2>
         <p class="lead font-weight-bold product-description">
-          
+
         </p>
       </div>
       <div class="row">
@@ -395,8 +394,33 @@
       magnifying_img.style.transform = 'translate(-50%,-50%) scale(1)'
     });
   </script>
-  
-  
+
+  <script>
+    function addCart(data) {
+      fetch(`http://localhost:8000/api/cart/`, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify(data)
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          console.log(data)
+        })
+        .catch((error) => {
+          console.error("There was a problem with your fetch operation:", error);
+        });
+    }
+  </script>
+
   <!-- form submit -->
   <script>
     (function () {
@@ -426,7 +450,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>

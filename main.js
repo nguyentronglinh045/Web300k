@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", fetchData);
+document.addEventListener("DOMContentLoaded", fetchDataDetail);
 
 function fetchData() {
   fetch("http://localhost:8000/api/cart")
@@ -11,6 +12,24 @@ function fetchData() {
     .then((data) => {
       console.log(data)
       renderProductInCart(data)
+    })
+    .catch((error) => {
+      console.error("There was a problem with your fetch operation:", error);
+    });
+}
+
+function fetchDataDetail(id) {
+  fetch(`http://localhost:8000/api/product/${id}`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data)
+      renderProductNameAndPrice(data)
+      renderProductionDescription(data)
     })
     .catch((error) => {
       console.error("There was a problem with your fetch operation:", error);
@@ -46,34 +65,30 @@ function renderProductInCart(cartsData) {
   }
 }
 
-function renderProductNameAndPRice() {
+function renderProductNameAndPrice(data) {
   const productNameElements = document.querySelectorAll('.product-name');
   productNameElements.forEach(element => {
-    element.textContent = productDetails[0].products;
+    element.textContent = data.product[0].products;
   });
-  document.querySelector('.product-item').textContent = convertToCurrency(productDetails[0].price)
+  document.querySelector('.product-item').textContent = convertToCurrency(data.product[0].price)
 }
 
 function renderImg() {
   const imgElement = document.getElementById('magnifying_img');
-  imgElement.src = productDetails[0].images
+  imgElement.src = data.product[0].images
 }
 
-function renderProductionDescription() {
+function renderProductionDescription(data) {
   const productDescriptionHeader = document.querySelector('.product-description-header');
   const productDescription = document.querySelector('.product-description');
-  productDescriptionHeader.textContent = 'Đặc điểm nổi bật của ' + productDetails[0].products
-  productDescription.textContent = productDetails[0].description
+  productDescriptionHeader.textContent = 'Đặc điểm nổi bật của ' + data.product[0].products
+  productDescription.textContent = data.product[0].description
 }
 function convertToCurrency(amount) {
-  // Chuyển đổi số tiền sang chuỗi và đảm bảo là số nguyên
   const amountStr = Math.round(amount).toString();
-  // Tạo biến để lưu kết quả
   let result = '';
 
-  // Lặp qua từng ký tự của số tiền
   for (let i = amountStr.length - 1, count = 0; i >= 0; i--) {
-    // Thêm dấu phân cách hàng nghìn sau mỗi 3 số
     result = amountStr.charAt(i) + result;
     count++;
     if (count === 3 && i > 0) {
@@ -81,8 +96,6 @@ function convertToCurrency(amount) {
       count = 0;
     }
   }
-
-  // Thêm ký hiệu "đ" vào cuối chuỗi
   result += 'đ';
   return result;
 }

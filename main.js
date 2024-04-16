@@ -127,14 +127,14 @@ function addCart() {
     mode: "cors",
     headers: {
       "Content-Type": "application/json",
-      "Content-Type": "application/x-www-form-urlencoded",
+      // "Content-Type": "application/x-www-form-urlencoded",
     },
     body: JSON.stringify({
-      id: detailProduct.id,
-      name: detailProduct.products,
-      price: detailProduct.price,
-      image: detailProduct.images,
-      amount: 1,
+        id: detailProduct.id,
+        name: detailProduct.products,
+        price: detailProduct.price,
+        image: detailProduct.images,
+        amount: 1,
     }),
   })
     .then((response) => {
